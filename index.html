@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Escape - Homagama</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        header {
+            background: url('garden3.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 100px 20px;
+            font-size: 2em;
+            animation: slideDown 1s ease-in-out;
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .album {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .album div {
+            position: relative;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .album img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+        .album img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .album div span {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .features, .contact, .packages, .reviews, .availability {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .social-buttons {
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .social-buttons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-buttons img:hover {
+            transform: scale(1.2);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sunset Escape</h1>
+        <p>Luxury Villa in Homagama</p>
+    </header>
+
+    <section class="album">
+        <div>
+            <a href="bedrooms.html">
+                <img src="PHOTO-2025-02-01-21-57-21 5.jpg" alt="Bedrooms">
+                <span>Bedrooms</span>
+            </a>
+        </div>
+        <div>
+            <a href="karaoke.html">
+                <img src="karaoke1.JPG" alt="Karaoke Room">
+                <span>Karaoke Room</span>
+            </a>
+        </div>
+        <div>
+            <a href="swimming_pool.html">
+                <img src="PHOTO-2025-02-01-21-57-21 24.jpg" alt="Swimming Pool">
+                <span>Swimming Pool</span>
+            </a>
+        </div>
+        <div>
+            <a href="garden.html">
+                <img src="PHOTO-2025-02-01-21-57-21 15.jpg" alt="Garden & Seating">
+                <span>Garden & Seating</span>
+            </a>
+        </div>
+        <div>
+            <a href="living_room.html">
+                <img src="living2.JPG" alt="Living Room">
+                <span>Living Room</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2>Our Packages</h2>
+        <h3>Night Out Package - Rs.75,000/-</h3>
+        <p>✔ 5 Double Bedrooms, 1 Family Bedroom</p>
+        <p>✔ Pool Access, In-House Chef, BBQ Facilities</p>
+        <p>✔ Activities - Badminton, Volleyball, Basketball</p>
+        <h3>Day Outing - Rs.5000/- Per Head</h3>
+        <p>✔ Welcome Drink, Lunch with Dessert, Evening Tea & Snack</p>
+        <p>✔ Exclusive Pool Access</p>
+        <p>✔ One A/C Room (Over 10 pax)</p>
+        <p>✔ Activities - Badminton, Basketball, Volleyball, Carrom</p>
+    </section>
+
+    <section class="social-buttons">
+        <a href="https://wa.me/94714175072" target="_blank">
+            <img src="whatsapp-icon.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.tiktok.com/@sunset_escape24?_t=ZS-8tZk3AmQiNZ&_r=1" target="_blank">
+            <img src="tiktok-icon.png" alt="TikTok">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61558978170381&mibextid=LQQJ4d" target="_blank">
+            <img src="facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/sunset_escape_?igsh=ZDZ4Ym9ycmFsb3h4" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.google.com/search?client=mobilesearchapp&sca_esv=19b551ade1306bfb&bih=797&biw=390&channel=iss&cs=0&hl=en_GB&rlz=1MDAPLA_en-GBLK1036LK1037&v=329.0.660098639&sxsrf=ADLYWIKilrnViA-JyOIdEcXUHRAQ_mo1Lg%3A1724174907001&q=Sunset%20Escape&ludocid=2770399640824817501&ibp=gwp%3B0%2C7&gsas=1&lsig=AB86z5Vaz3024pBF4WGem957FvHF&shndl=-1&shem=lrnolc%2Clsde%2Cvslcca&source=sh%2Fx%2Floc%2Fact%2Fm1%2F5&kgs=107751d7f0ae74a9" target="_blank">
+            <img src="google-maps.png" alt="Google Maps">
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sunset Escape, Homagama. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
